@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/containers/Applications/ApplicationsListContainer/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">app/containers/Applications/ApplicationsListContainer/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">59.84% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>73/122</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">74.14% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>43/58</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>20/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.53% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/53</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">20 statements, 13 functions, 24 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+ *
+ * ApplicationsListContainer
+ *
+ */
+&nbsp;
+import React from 'react';
+import { connect } from 'react-redux';
+import selectApplicationsListContainer from './selectors';
+import GridList from '../../../components/GridList';
+import * as applicationsActions from './actions';
+import { bindActionCreators } from 'redux';
+import { push } from 'react-router-redux';
+import { showLoading } from '../../../_shared/actions';
+import { SORT_OPTIONS } from '../../../_shared/constants';
+&nbsp;
+import ConfirmationModal from '../../../components/ConfirmationModal'
+&nbsp;
+export class ApplicationsListContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  static propTypes = {
+    actions: React.PropTypes.object.isRequired,
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  constructor(props)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span></span></span></span></span>
+    super(props);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.navigateTo = this.navigateTo.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.onPageChange = this.onPageChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.onPageSizeChange = this.onPageSizeChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.onRefresh = this.onRefresh.bind(this);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.deleteApplication = this.deleteApplication.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.deleteConfirm = this.deleteConfirm.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.deleteCancel = this.deleteCancel.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.filterChange = this.filterChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.onSortChange = this.onSortChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.sortBy = SORT_OPTIONS.DATE_DESC;
+<span class="cstat-no" title="statement not covered" >    t</span>his.filterValue = '';
+    
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      pagination: {
+        total: 1,
+        page: 1,
+        size: 10,
+        filter: this.sortBy,
+      },
+      showModal: false,
+      deleteRowID: -1
+    }
+  }
+&nbsp;
+  componentWillMount() {
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.requestApplications(this.state.pagination);
+  }
+&nbsp;
+  componentWillReceiveProps(nextProps) {
+<span class="cstat-no" title="statement not covered" >    if (nextProps &amp;&amp; nextProps.list) {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.mapApplications(nextProps.list);
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({pagination: {...this.state.pagination, total: +nextProps.totalApplications }});
+<span class="cstat-no" title="statement not covered" >      t</span>his.state.showModal == true ? this.setState({showModal: false}) : '';
+    }
+  }
+&nbsp;
+  onPageChange(event) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({pagination: { ...this.state.pagination,page: +event.target.value}}, <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>) =&gt; this.props.actions.requestApplications(this.state.pagination));
+  }
+&nbsp;
+  onPageSizeChange(event) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({pagination: {...this.state.pagination, page: 1, size: +event.target.value}}, <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>) =&gt; this.props.actions.requestApplications(this.state.pagination));
+  }
+&nbsp;
+  onRefresh()<span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.filterValue = '', this.sortBy = SORT_OPTIONS.DATE_DESC;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({pagination: {...this.state.pagination, page: 1, filter: `${this.sortBy}/${this.filterValue}`}}, <span class="fstat-no" title="function not covered" >() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.props.actions.fetchApplications(this.state.pagination);
+    })
+  }
+&nbsp;
+  deleteApplication (id) {
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({showModal: true, deleteRowID: id});
+  }
+&nbsp;
+  deleteConfirm (){
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.deleteApplication(this.state.deleteRowID);
+  }
+&nbsp;
+  deleteCancel (){
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({showModal: false});
+  }
+&nbsp;
+  columns = [
+    {dataField: 'displayName', isKey: true, dataSort: true, dataFormat: 'link', displayName: 'Display Name'},
+    {dataField: 'emailContact', isKey: false, dataSort: true, displayName: 'Email'},
+    {dataField: 'logoUrl', isKey: false, dataSort: true, displayName: 'Logo Url'},
+    {dataField: 'siteUrl', isKey: false, dataSort: true, displayName: 'Site Url'},
+    {dataField: 'buttons', isKey: false, dataFormat: 'buttons', displayName: 'Actions'},    
+  ];
+&nbsp;
+  navigateTo = <span class="fstat-no" title="function not covered" >(menuItem) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.push(menuItem);
+  };
+&nbsp;
+  filterChange = <span class="fstat-no" title="function not covered" >(event) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.filterValue = event &amp;&amp; event.target &amp;&amp; event.target.value ? event.target.value : this.filterValue;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({pagination: {...this.state.pagination, filter: `${this.sortBy}/${this.filterValue}`}}, <span class="fstat-no" title="function not covered" >() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.props.actions.fetchApplications(this.state.pagination);
+    })
+  };
+&nbsp;
+  onSortChange = <span class="fstat-no" title="function not covered" >(sortBy) =&gt; {</span>
+    // console.log(sortBy);
+<span class="cstat-no" title="statement not covered" >    t</span>his.sortBy = sortBy;
+<span class="cstat-no" title="statement not covered" >    t</span>his.filterChange();
+  }
+&nbsp;
+  breadcrumbs = [{url:'/', name:'Home'}, {url:'', name:'Applications'}];
+&nbsp;
+  mapApplications (applications) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    t</span>his.data = applications.map(<span class="fstat-no" title="function not covered" >app =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eturn {
+        ...app,
+        buttons: [
+          {
+            tooltip: 'Edit',
+            icon: 'pencil-square-o',
+            color: 'primary',
+            onClick: this.navigateTo,
+          },
+          {
+            tooltip: 'Remove',
+            icon: 'remove',
+            color: 'danger',
+            onClick: this.deleteApplication,
+          },          
+        ]
+      }
+    });
+  }
+&nbsp;
+  render() {
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div&gt;
+        { this.data &amp;&amp; 
+          &lt;GridList
+            listData={this.data}
+            ajaxRequestsInProgress={this.props.ajaxRequestsInProgress}
+            columnsDef={this.columns}
+            breadcrumbs={this.breadcrumbs}
+            navigateTo={this.navigateTo}
+            location={this.props.location}
+            onPageChange={this.onPageChange}
+            onPageSizeChange={this.onPageSizeChange}
+            pagination={this.state.pagination}
+            refreshClick={this.onRefresh}
+            filterChange={this.filterChange}
+            filterValue={this.filterValue}
+            filterPlaceholder='Search by Application Name'
+            onSortChange={this.onSortChange}/&gt;
+        }
+        &lt;ConfirmationModal header={`Delete`} body={`Are you sure you want to delete the application?`} confirm={{text: 'Delete', color:'danger', callBack:this.deleteConfirm, isDisabled:false}} cancel={{text: 'Cancel', color:'primary', callBack:this.deleteCancel, isDisabled: false}} showModal={this.state.showModal}/&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+&nbsp;
+const mapStateToProps = selectApplicationsListContainer();
+&nbsp;
+<span class="fstat-no" title="function not covered" >function mapDispatchToProps(dispatch) {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn {
+    actions: bindActionCreators(Object.assign({}, applicationsActions, {push,showLoading}), dispatch),
+  };
+}
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(ApplicationsListContainer);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jan 23 2018 20:05:46 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

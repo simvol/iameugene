@@ -1,0 +1,12 @@
+.button { /* stylelint-disable */
+    width: 100%;
+    margin-top: 23px;
+    margin-left: -1px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.button span {
+    margin-right: 7px;
+}
+

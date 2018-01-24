@@ -1,0 +1,9 @@
+.userDetailsPage { /* stylelint-disable */
+    height: 2000px;
+    position: relative;
+}
+
+.leftline {
+    border-left: 1px solid;
+    padding-left: 10px;
+}

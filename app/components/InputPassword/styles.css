@@ -1,0 +1,27 @@
+.inputPassword { /* stylelint-disable */
+  position: relative;
+}
+
+.inputPassword input {
+  min-width: 100%;
+  color: #6e6565;
+  padding-left: 7px!important;
+  background-color: #fff!important;
+  resize: none;
+}
+
+.error input:not(:focus) {
+  border-color: red;
+}
+
+.error input:not(:focus) + small{
+  display: inline;
+}
+
+.inputPassword small {
+  color: red;
+  display: none;
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+}

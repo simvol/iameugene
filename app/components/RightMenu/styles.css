@@ -1,0 +1,25 @@
+.rightMenu { /* stylelint-disable */
+    padding-top: 63px;
+    width: 218px;
+    transition: all .28s ease-in;
+    position: fixed;
+}
+
+.active {
+    background-image: none!important;
+    background-color: #00b1da!important;
+    border: 1px solid #0197cd!important;
+    text-shadow: none!important;
+    color: #fff !important;
+}
+
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}

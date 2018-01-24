@@ -1,0 +1,8 @@
+.pageHeader { /* stylelint-disable */
+    border-bottom: 1px solid #e7eaec!important;    
+}
+
+.pageHeader strong {
+    color: #777;
+    font-weight: 700;
+}

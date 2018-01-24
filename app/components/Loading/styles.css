@@ -1,0 +1,20 @@
+.loading { /* stylelint-disable */
+
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    transition: all .65s ease;
+
+}
+
+.loading_img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -10px;
+    color: #fff!important;
+    font-size: 32px;
+}

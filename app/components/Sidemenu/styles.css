@@ -1,0 +1,54 @@
+.sidemenu {
+  background-color: #2e353d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #e1ffff;
+  z-index: 1040;
+}
+
+.expanded {
+  width: 4%;
+}
+
+.brand {
+  background-color: #23282e;
+  line-height: 55px;
+  display: block;
+  min-height: 55px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.menuIcon {
+  background-color: #23282e!important;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  color: #aaa;
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menuIcon:hover {
+  background-color: #87939e!important;
+  color: #fff;
+}
+
+.search {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid #444;
+  color: #8a8888;
+  height: 34px;
+  font-size: 13px;
+  border-radius: 5px;
+}

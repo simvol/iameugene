@@ -1,0 +1,99 @@
+.yesNoGrid div:first-child{ /* stylelint-disable */
+  position: relative;
+  width: 40px!important;
+  float: left;
+  margin-right: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.yesNoGrid input {
+  margin: 9px 0 0;
+  line-height: normal;
+  padding: 0;
+  display: none;
+}
+
+.yesNoGrid label {
+  display: block;
+  overflow: hidden;
+  cursor: default;
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.faded {
+  opacity: .6;  
+}
+
+.yesNoGrid span:first-child {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin .3s ease-in 0s;
+}
+
+.checked span:first-child {
+  margin-left:0;
+}
+
+.yesNoGrid span:first-child::before, .yesNoGrid span:first-child::after {
+  content: "Yes";
+  padding-left: 11px;
+  background-color: #00b1da;
+  color: #fff;
+  display: block;
+  float: left;
+  width: 50%;
+  /* height: 26px; */
+  /* line-height: 25px; */
+  /* font-size: 14px; */
+  box-sizing: border-box;
+
+  height: 19px!important;
+  line-height: 20px!important;
+  font-size: 11px!important;
+}
+
+.yesNoGrid span:first-child::before {
+  padding-left: 6px!important;
+}
+
+.yesNoGrid span:first-child::after {
+  content: "No";
+  padding-right: 8px;
+  background-color: #f9f9f9;
+  color: #747474;
+  text-align: right;
+}
+
+.yesNoGrid span:last-child {
+  right: 0;
+  display: block;
+  /* width: 11px; */
+  /* height: 16px; */
+  /* margin: 6px; */
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 20px;
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  right: 22px;
+  transition: all .3s ease-in 0s;
+
+  width: 7px!important;
+  height: 12px!important;
+  margin: 5px!important;
+}
+
+.checked span:last-child {
+  right: 0;
+}
+
+.yesNoGrid div:last-child {
+  padding-top: 4px;
+}

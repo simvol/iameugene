@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+html{
+  height:100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  font-size: 13px;
+  color: #5c5c5c;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  color: #454545;
+  margin-bottom: 30px;
+}
+
+.fix-to-top {
+  position: fixed;
+  top: 0;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+                                                               /* Spacing */
+.mt-m {
+  margin-top: 20px;
+}
+
+.mt-s {
+  margin-top: 10px;
+}
+
+.mt-m {
+  margin-top: 20px;
+}
+
+.mb-m {
+  margin-bottom: 20px;
+}
+
+.mb-s {
+  margin-bottom: 10px;
+}
+
+.mb-l {
+  margin-bottom: 40px;
+}
+
+.mr-s {
+  margin-right: 10px;
+}
+
+.plr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pl-s {
+  padding-left: 10px;
+}
+
+.pt-m {
+  padding-top: 20px;
+}
+
+.pr-n {
+  padding-right: 0;
+}
+
+.pl-n {
+  padding-left: 0;
+}
+                                                                /* .Spacing */
+
+                                                                /* Buttons */
+.button-width {
+  width: 200px;
+}
+
+.button-width a {
+  min-width: 100%;
+}
+
+.btn-primary {
+  background-color: #00b1da;
+  border: 1px solid transparent;
+}
+
+.btn-success {
+  background-color: #27c298 /*!important*/;
+  border-color: #4cae4c;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+}
+                                                                /* .Buttons */
+                                                                /* Grid */
+
+.react-bs-table {
+  border: 1px solid #d4d4d4;
+}
+
+.grid-lite .react-bs-table-container {
+  background: #fff;
+  border: none;
+}
+
+.grid-lite .react-bs-container-header {
+  border-bottom: 1px solid #a8a8a8;
+  border: none;
+  border-radius: 0;
+}
+
+.grid-lite .react-bs-container-body {
+  border-radius: 0;
+}
+
+.grid-lite .react-bs-table-bordered {
+  border-radius: 0;
+}
+
+.react-bs-table-bordered {
+  border-radius: 0 !important;
+}
+
+.grid-lite .react-bootstrap-table {
+  border: 1px solid black;
+}
+
+.grid-lite .react-bs-table .table-bordered > thead > tr {
+    border-bottom: 1px solid #a8a8a8;
+}
+
+
+.grid-lite .react-bs-table .table-bordered > thead > tr > th, .react-bs-table .table-bordered > thead > tr > td {
+  border-width: 1px;
+  border-color: #a8a8a8;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.grid-lite .react-bs-table .table-bordered > thead > tr > th:first-child {
+  border-left: 0;
+}
+
+.grid-lite .react-bs-table .table-bordered > tbody > tr > td {
+  border-top: 0;
+}
+
+.grid-lite .react-bs-table .table-bordered > tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.grid-lite button {
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+}
+
+.no-grid-results {
+  width: 100%;
+  padding: 13px;
+  color: #616161;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+}
+
+.no-results-x {
+  width: 20px;
+  margin-left: 3px;
+}
+
+                                                                /* .Grid */
+
+.select-add .Select-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.DayPickerInput {
+  width: 100%;
+}
+
+.DayPickerInput-OverlayWrapper {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* @media screen and (min-width: 1200px) {
+  .sidemenu {
+    width: 320px;
+  }
+
+  .main-content {
+    margin-left: 320px;
+  }
+} */
+
+/* .MOBILE STYLES */
+/* Expand/collapse sidemenu with 'expanded' class on sidemenu and main-content containers */
+.sidemenu {
+  width: 55px;
+}
+.linkListUl {
+  padding-left: 20px !important;
+}
+.linkListUl li span:last-child {
+  display:none;
+}
+.main-content {
+  margin-left: 55px;
+}
+.sidemenu.expanded {
+  width: 300px;
+}
+.sidemenu.expanded .linkListUl{
+  padding-left: 30px;
+}
+.expanded .linkListUl li span:last-child {
+  display:initial;
+}
+.main-content.expanded {
+  margin-left: 300px;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .sidemenu {
+    width: 300px;
+  }
+  .sidemenu .linkListUl{
+    padding-left: 30px;
+  }
+  .linkListUl li span:last-child {
+    display:initial;
+  }
+  .main-content {
+    margin-left: 300px;
+  }
+} */
+/* .MOBILE STYLES */

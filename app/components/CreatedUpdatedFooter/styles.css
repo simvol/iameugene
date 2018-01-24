@@ -1,0 +1,9 @@
+.createdUpdatedFooter { /* stylelint-disable */
+
+}
+
+.createdUpdatedFooter hr{
+    border-color: #b9b9b9;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}

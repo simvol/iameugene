@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/RightMenu/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/components/RightMenu/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.69% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.77% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.18% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+*
+* RightMenu
+*
+*/
+&nbsp;
+import React from 'react';
+import { animateScroll } from 'react-scroll';
+import Button from '../Button';
+import Scrollspy from 'react-scrollspy';
+&nbsp;
+import styles from './styles.css';
+&nbsp;
+<span class="fstat-no" title="function not covered" >function RightMenu({ sections, onSave, onBack, saveDisabled }) <span class="cstat-no" title="statement not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >  c</span>onst smoothlyScroll = <span class="fstat-no" title="function not covered" >(e) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    e</span>.preventDefault();
+<span class="cstat-no" title="statement not covered" >    v</span>ar offset = document.getElementById(e.currentTarget.hash.substr(1));
+<span class="cstat-no" title="statement not covered" >    a</span>nimateScroll.scrollTo(offset.offsetTop + 180, {duration: 800});
+  };
+<span class="cstat-no" title="statement not covered" >  c</span>onst sectionIds = sections.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >s</span></span> =&gt; s.id);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn (
+    &lt;nav className={styles.rightMenu}&gt;
+      &lt;div className={styles.sidebar}&gt;
+        &lt;Scrollspy items={ sectionIds } currentClassName={styles.active} className='list-group' style={{marginBottom: '0'}}&gt;
+          {
+            sections.map(<span class="fstat-no" title="function not covered" >(section,i) =&gt; {</span>
+              
+<span class="cstat-no" title="statement not covered" >              if (i === 0) {</span>
+<span class="cstat-no" title="statement not covered" >                r</span>eturn (
+                  &lt;a className='list-group-item text-center overflow-ellipsis' key={i}&gt;
+                    &lt;span className="sidebar-nav-title-text ng-binding" style={{fontWeight: '600'}}&gt;{section.label}&lt;/span&gt;
+                  &lt;/a&gt;
+                );
+              } else {
+<span class="cstat-no" title="statement not covered" >                r</span>eturn (
+                  &lt;a onClick={smoothlyScroll} href={`#${section.id}`} className={`list-group-item overflow-ellipsis `} key={i}&gt;
+                    &lt;i className={`${section.icon} mr-s`}&gt;&lt;/i&gt;&lt;span className="sidebar-item-text"&gt;{section.label}&lt;/span&gt;
+                  &lt;/a&gt;
+                ); 
+              }
+&nbsp;
+            })
+          }
+        &lt;/Scrollspy&gt;
+        { (onSave || onBack) &amp;&amp; &lt;div className={styles.buttons}&gt;
+          {onBack &amp;&amp; &lt;Button label='Back' color='primary' onClick={onBack} icon='arrow-left'/&gt;}
+          {onSave &amp;&amp; &lt;Button label='Save' color='success' onClick={onSave} icon='floppy-o' disabled={saveDisabled} /&gt;}
+        &lt;/div&gt;}
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  );
+}
+&nbsp;
+RightMenu.propTypes = {
+  sections: React.PropTypes.arrayOf(React.PropTypes.shape({
+    label: React.PropTypes.string,
+    id: React.PropTypes.string,
+  })).isRequired,
+  onSave: React.PropTypes.func,
+  onBack: React.PropTypes.func,
+};
+&nbsp;
+export default RightMenu;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jan 23 2018 20:05:46 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

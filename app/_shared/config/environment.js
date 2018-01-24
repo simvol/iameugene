@@ -1,0 +1,1 @@
+export const ApiSettings = {"searchPrefix":"https://iam-backend.firebaseio.com/","oldSearchPrefix":"https://iam-backend.firebaseio.com/","listPrefix":"https://iam-backend.firebaseio.com/","filesPrefix":"https://iam-backend.firebaseio.com","firebase":true,"suffix":"iam-admin-test"}

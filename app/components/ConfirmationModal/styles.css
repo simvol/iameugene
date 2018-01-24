@@ -1,0 +1,22 @@
+.confirmationModal { /* stylelint-disable */
+
+}
+
+.body{
+    padding: 18px;
+    font-size: 15px;
+    color: #6F6F6F;
+    font-weight: 400;
+}
+
+.header{
+    padding: 17px 17px 17px 34px;
+}
+
+.cnl_btn{
+    padding-left: 4px;
+}
+
+.cfm_btn{
+    padding-right: 4px;
+}

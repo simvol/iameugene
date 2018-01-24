@@ -1,0 +1,31 @@
+.detailsSection { /* stylelint-disable */
+
+}
+
+.detailsSection section {
+    background-color: #f3f3f4;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.detailsSection:last-child {
+    margin-bottom: 90px;
+}
+
+.footer hr {
+    border-color: #b9b9b9;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.footer span {
+    line-height: 25px;
+}
+
+.footer b {
+    font-weight: 600 !important;
+}

@@ -1,0 +1,11 @@
+.grid { /* stylelint-disable */
+    
+}
+
+.grid tbody tr td:last-child {
+  padding: 3px;
+}
+
+.grid tbody td {
+  vertical-align: middle !important;
+}

@@ -1,0 +1,13 @@
+.selectAdd { /* stylelint-disable */
+
+}
+
+.selectAdd button {
+  margin-top: 0 !important;
+  min-width: 60px;
+  margin-left: -11px;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 36px;
+}

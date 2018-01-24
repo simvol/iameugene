@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/GridFooter/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/components/GridFooter/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>14/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+*
+* GridFooter
+*
+*/
+&nbsp;
+import React from 'react';
+import { OPTIONS_LIST } from '../../_shared/constants';
+import GridPageButtons from '../GridPageButtons';
+&nbsp;
+import styles from './styles.css';
+&nbsp;
+<span class="fstat-no" title="function not covered" >function GridFooter({onPageSizeChange, onPageChange, pagination}) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  l</span>et totalPages; 
+&nbsp;
+  const { total, size, page } = pagination;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  c</span>alculateTotalPages();
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function calculateTotalPages(){</span>
+<span class="cstat-no" title="statement not covered" >    l</span>et l_totalPages = [];
+<span class="cstat-no" title="statement not covered" >    l</span>et numberOfPages = Math.ceil(total/size);
+<span class="cstat-no" title="statement not covered" >    for (var index = 1; index &lt;= numberOfPages; index++) {</span>
+<span class="cstat-no" title="statement not covered" >      l</span>et element = {
+        value: index,
+        isDisabled: false
+      }
+<span class="cstat-no" title="statement not covered" >      l</span>_totalPages.push(element);      
+    }
+<span class="cstat-no" title="statement not covered" >    l</span>_totalPages[page-1].isDisabled = true;
+<span class="cstat-no" title="statement not covered" >    t</span>otalPages = l_totalPages;
+  }
+<span class="cstat-no" title="statement not covered" >  r</span>eturn (
+    &lt;div className={`${styles.gridFooter} row mb-l`}&gt;
+      &lt;div className={`col-md-2`}&gt;
+        &lt;select onChange={onPageSizeChange} defaultValue={size} className={styles.select_dd} &gt;
+          {OPTIONS_LIST.map(<span class="fstat-no" title="function not covered" >function (item) {</span>
+<span class="cstat-no" title="statement not covered" >            r</span>eturn &lt;option key={item.value} value={item.value} &gt; {item.value} &lt;/option&gt;  
+          })
+          }       
+        &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div className='col-md-3 col-md-offset-7'&gt;
+        &lt;button className={`${styles.page_num_btn} btn btn-success fa fa-backward`} onClick={onPageChange} value={page-1} disabled={totalPages[0].isDisabled}&gt;&lt;/button&gt;
+        {
+          totalPages.map(<span class="fstat-no" title="function not covered" >function (item, i) {</span>
+<span class="cstat-no" title="statement not covered" >            r</span>eturn &lt;button type='button' className={`${styles.page_num_btn} btn btn-primary`} onClick={onPageChange} key={i} value={item.value} disabled={item.isDisabled} &gt;{item.value}&lt;/button&gt;
+          })
+        }
+        &lt;button className={`${styles.page_num_btn} btn btn-success fa fa-forward`} onClick={onPageChange} value={page+1} disabled={totalPages[totalPages.length - 1].isDisabled}&gt;&lt;/button&gt; &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+&nbsp;
+GridFooter.propTypes = {
+  onPageSizeChange: React.PropTypes.func.isRequired,
+  onPageChange: React.PropTypes.func.isRequired,
+  pagination: React.PropTypes.shape({
+    total: React.PropTypes.number.isRequired, //total data count
+    size: React.PropTypes.number.isRequired, // data per page
+    page: React.PropTypes.number.isRequired, // current page
+  })
+};
+&nbsp;
+export default GridFooter;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jan 23 2018 20:05:46 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

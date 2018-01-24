@@ -1,0 +1,10 @@
+.inputDate { /* stylelint-disable */
+}
+
+.input {
+  min-width: 100%;
+  color: #6e6565;
+  padding-left: 7px!important;
+  background-color: #fff!important;
+  resize: none;
+}

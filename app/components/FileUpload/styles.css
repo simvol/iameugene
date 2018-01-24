@@ -1,0 +1,11 @@
+.fileUpload { /* stylelint-disable */
+
+}
+
+.fileUpload input[type="file"] {
+  display: none;
+}
+
+.fileUpload label {
+  width: 150px;
+}

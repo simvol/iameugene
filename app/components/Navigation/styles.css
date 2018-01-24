@@ -1,0 +1,12 @@
+.navigation { /* stylelint-disable */
+    background: #2e353d;
+    color: #ffffff;
+}
+
+.navigation a {
+    color: #ffffff;
+}
+
+.navigation a.active {
+    color: #00cfff !important;
+}

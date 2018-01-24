@@ -1,0 +1,30 @@
+.header { /* stylelint-disable */
+    padding-right: 0;
+}
+
+.navbarSignOut {
+    float: right;
+    background-color: #fff;
+    padding-top: 14px;
+    padding-right: 52px;
+    padding-left: 20px;
+    margin: 5px 0;
+    height: 43px;
+    cursor: pointer;
+}
+
+.navbarHeaderDivider{
+    float: right;
+    height: 30px;
+    margin-top: 13px;
+    border-left: 1px solid #e7eaec;
+}
+
+.userSwitchGroup {
+    text-align: right;
+    float: right;
+}
+
+.userSwitchGroup b {
+    font-weight: bold;
+}

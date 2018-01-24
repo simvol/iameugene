@@ -1,0 +1,17 @@
+.linkList { /* stylelint-disable */
+
+}
+
+.linkList ul {
+    list-style: none;
+    list-style-position: outside;
+}
+
+.linkList ul li {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.active {
+    color: #00cfff!important;
+}
